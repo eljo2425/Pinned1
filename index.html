@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinned</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #f0fcfa, #60c1ff);
+      overflow: hidden;
+      font-family: 'Great Vibes', cursive;
+      position: relative;
+    }
+
+    .flower-container {
+      position: relative;
+      text-align: center;
+    }
+
+    .flower {
+      border: none;
+      position: relative;
+      margin-bottom: 0px;
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+      width: 600px; /* Adjust width as desired */
+      height: auto; /* Maintain aspect ratio */
+      animation: floatFlower 4s infinite ease-in-out; /* Flower animation */
+    }
+
+    /* Animation for flower */
+    @keyframes floatFlower {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Styling for the text */
+    .text {
+      position: absolute;
+      color: rgb(18, 0, 180); /* Changed text color to white */
+      font-size: 75px; /* Adjust font size as desired */
+      font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: floatText 4s infinite ease-in-out;
+      top: -12%; /* Position text at the bottom */
+      left: 24%; /* Center the text horizontally */
+      transform: translateX(-50%); /* Adjust horizontal alignment */
+    }
+
+    /* Animation for text */
+    @keyframes floatText {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Styling for date text */
+    .date-text {
+      position: absolute;
+      color: rgb(18, 0, 180); /* Changed text color to white */
+      font-size: 30px; /* Adjust font size as desired */
+      font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: floatText 4s infinite ease-in-out;
+      bottom: -15%; /* Position text at the bottom */
+      left: 35%; /* Center the text horizontally */
+      transform: translateX(-50%); /* Adjust horizontal alignment */
+    }
+  </style>
+</head>
+<body>
+  <div class="flower-container">
+    <img src="images/flowergif.gif" alt="Flower" class="flower"> <!-- Updated flower image source -->
+    <!-- Text at the bottom of the flower -->
+    <div class="text">For Shai</div>
+    <!-- Date text at the bottom of the flower -->
+    <div class="date-text">February 14, 2024</div>
+  </div>
+  
+</body>
+</html>
