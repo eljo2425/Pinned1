@@ -9,12 +9,10 @@
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background: linear-gradient(to bottom right, #f0fcfa, #60c1ff);
-      overflow: hidden;
       font-family: 'Great Vibes', cursive;
       position: relative;
     }
@@ -22,6 +20,8 @@
     .flower-container {
       position: relative;
       text-align: center;
+      width: 80%; /* Adjust width for smaller screens */
+      max-width: 800px; /* Max width for larger screens */
     }
 
     .flower {
@@ -29,7 +29,7 @@
       position: relative;
       margin-bottom: 0px;
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
-      width: 600px; /* Adjust width as desired */
+      width: 100%; /* Occupy full width */
       height: auto; /* Maintain aspect ratio */
       animation: floatFlower 4s infinite ease-in-out; /* Flower animation */
     }
@@ -48,42 +48,31 @@
     }
 
     /* Styling for the text */
+    .text, .date-text {
+      position: absolute;
+      color: black; /* Change text color to black */
+      font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 3vw; /* Adjust font size for both mobile and computer devices */
+    }
+
     .text {
-      position: absolute;
-      color: rgb(18, 0, 180); /* Changed text color to white */
-      font-size: 75px; /* Adjust font size as desired */
-      font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      animation: floatText 4s infinite ease-in-out;
-      top: -12%; /* Position text at the bottom */
-      left: 24%; /* Center the text horizontally */
+      top: 5%; /* Position text at the top */
+      left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
     }
 
-    /* Animation for text */
-    @keyframes floatText {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-15px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    /* Styling for date text */
     .date-text {
-      position: absolute;
-      color: rgb(18, 0, 180); /* Changed text color to white */
-      font-size: 30px; /* Adjust font size as desired */
-      font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      animation: floatText 4s infinite ease-in-out;
-      bottom: -15%; /* Position text at the bottom */
-      left: 35%; /* Center the text horizontally */
+      bottom: 5%; /* Position text at the bottom */
+      left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .text, .date-text {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+      }
     }
   </style>
 </head>
@@ -95,6 +84,5 @@
     <!-- Date text at the bottom of the flower -->
     <div class="date-text">February 14, 2024</div>
   </div>
-  
 </body>
 </html>
