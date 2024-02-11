@@ -20,7 +20,7 @@
     .flower-container {
       position: relative;
       text-align: center;
-      width: 90%; /* Adjust width for smaller screens */
+      width: 100%; /* Occupy full width */
     }
 
     .flower {
@@ -28,7 +28,7 @@
       position: relative;
       margin-bottom: 0px;
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
-      width: 100%; /* Occupy full width */
+      max-width: 90%; /* Set maximum width for better scaling */
       height: auto; /* Maintain aspect ratio */
       animation: floatFlower 4s infinite ease-in-out; /* Flower animation */
     }
@@ -56,13 +56,13 @@
     }
 
     .text {
-      top: 1%; /* Position text at the top */
+      top: 5%; /* Position text at the top */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
     }
 
     .date-text {
-      bottom: 1%; /* Position text at the bottom */
+      bottom: 5%; /* Position text at the bottom */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
     }
