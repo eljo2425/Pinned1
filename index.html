@@ -9,6 +9,7 @@
     body {
       margin: 0;
       padding: 0;
+      height: 100vh; /* Occupy full viewport height */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,17 +53,18 @@
       color: black; /* Change text color to black */
       font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      font-size: 5vw; /* Adjust font size for mobile devices */
     }
 
     .text {
-      top: 5%; /* Position text at the top */
+      font-size: 6vw; /* Adjust font size for mobile devices */
+      top: 10%; /* Position text at the top */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
     }
 
     .date-text {
-      bottom: 5%; /* Position text at the bottom */
+      font-size: 4vw; /* Adjust font size for mobile devices */
+      bottom: 10%; /* Position text at the bottom */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
     }
