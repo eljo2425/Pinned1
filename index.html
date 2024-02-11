@@ -29,7 +29,7 @@
       position: relative;
       margin-bottom: 0px;
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
-      max-width: 60%; /* Set maximum width for better scaling */
+      max-width: 100%; /* Set maximum width for better scaling */
       height: auto; /* Maintain aspect ratio */
       animation: floatFlower 4s infinite ease-in-out; /* Flower animation */
     }
@@ -56,7 +56,7 @@
 
     .text {
       color: black; /* Change text color to black */
-      font-size: 4vw; /* Adjust font size for mobile devices */
+      font-size: 8vw; /* Adjust font size for mobile devices */
       top: 1%; /* Position text at the top */
       left: 35%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
@@ -65,7 +65,7 @@
 
     .date-text {
       color: black; /* Change text color to black */
-      font-size: 2vw; /* Adjust font size for mobile devices */
+      font-size: 6vw; /* Adjust font size for mobile devices */
       bottom: 1%; /* Position text at the bottom */
       left: 35%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
@@ -86,7 +86,7 @@
     }
 
     /* Media query for smaller screens (mobile devices) */
-    @media screen and (max-width: 100%) {
+    @media screen and (max-width: 70%) {
       .text {
         font-size: 12vw; /* Adjust font size for mobile devices */
         top: -20%; /* Position text at the top */
