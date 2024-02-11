@@ -50,23 +50,39 @@
     /* Styling for the text */
     .text, .date-text {
       position: absolute;
-      color: black; /* Change text color to black */
       font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .text {
+      color: black; /* Change text color to black */
       font-size: 8vw; /* Adjust font size for mobile devices */
-      top: 5%; /* Position text at the top */
+      top: 1%; /* Position text at the top */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
+      animation: floatText 4s infinite ease-in-out; /* Animation for text */
     }
 
     .date-text {
+      color: black; /* Change text color to black */
       font-size: 6vw; /* Adjust font size for mobile devices */
       bottom: 1%; /* Position text at the bottom */
       left: 50%; /* Center the text horizontally */
       transform: translateX(-50%); /* Adjust horizontal alignment */
+      animation: floatText 4s infinite ease-in-out; /* Animation for text */
+    }
+
+    /* Animation for text */
+    @keyframes floatText {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
