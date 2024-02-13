@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f0fcfa, #60c1ff);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Swanky and Moo Moo', cursive;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 80px; /* Adjust font size */
+  font-weight: lighter;
+}
+
+.flower-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flower {
+  width: 600px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+.date {
+  font-size: 40px; /* Adjust font size */
+  animation: floatText 4s ease-in-out infinite alternate;
+  font-weight: lighter;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  h1 {
+    margin: 0;
+    font-size: 150px; /* Adjust font size */
+    font-weight: lighter;
+  }
+
+  .date {
+    font-size: 80px; /* Adjust font size */
+    animation: floatText 4s ease-in-out infinite alternate;
+    font-weight: lighter;
+  }
+
+  .flower {
+    width: 300px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    animation: float 4s ease-in-out infinite alternate;
+  }
+
+}
