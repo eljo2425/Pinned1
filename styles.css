@@ -17,6 +17,7 @@ header {
 h1 {
   margin: 0;
   font-size: 80px; /* Adjust font size */
+  animation: floatText 4s ease-in-out infinite alternate;
   font-weight: lighter;
 }
 
@@ -63,7 +64,7 @@ footer {
 
   h1 {
     margin: 0;
-    font-size: 60px; /* Adjust font size */
+    font-size: 70px; /* Adjust font size */
     animation: floatText 4s ease-in-out infinite alternate;
     font-weight: lighter;
   }
@@ -75,9 +76,11 @@ footer {
   }
 
   .flower {
-    width: 500px; /* Adjust width */
+    position: relative;
+    max-width: 90%;
     height: auto; /* Maintain aspect ratio */
     animation: float 4s ease-in-out infinite alternate;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
   }
 
 }
