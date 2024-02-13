@@ -3,110 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pinned</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh; /* Occupy full viewport height */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to bottom right, #f0fcfa, #60c1ff);
-      font-family: 'Just Me Again Down Here', cursive;
-      position: relative;
-    }
-
-    .flower-container {
-      position: relative;
-      text-align: center;
-      width: 100%; /* Occupy full width */
-    }
-
-    .flower {
-      border: none;
-      position: relative;
-      margin-bottom: 0px;
-      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
-      max-width: 90%; /* Set maximum width for better scaling */
-      height: auto; /* Maintain aspect ratio */
-      animation: floatFlower 4s infinite ease-in-out; /* Flower animation */
-    }
-
-    /* Animation for flower */
-    @keyframes floatFlower {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    /* Styling for the text */
-    .text, .date-text {
-      position: absolute;
-      font-family: 'Just Me Again Down Here', cursive;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .text {
-      color: black; /* Change text color to black */
-      font-size: 12vw; /* Adjust font size for mobile devices */
-      top: -25%; /* Position text at the top */
-      left: 34%; /* Center the text horizontally */
-      transform: translateX(-50%); /* Adjust horizontal alignment */
-      animation: floatText 4s infinite ease-in-out; /* Animation for text */
-    }
-
-    .date-text {
-      color: black; /* Change text color to black */
-      font-size: 6vw; /* Adjust font size for mobile devices */
-      bottom: -20%; /* Position text at the bottom */
-      left: 34%; /* Center the text horizontally */
-      transform: translateX(-50%); /* Adjust horizontal alignment */
-      animation: floatText 4s infinite ease-in-out; /* Animation for text */
-    }
-
-    /* Animation for text */
-    @keyframes floatText {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    /* Media query for smaller screens (mobile devices) */
-    @media screen and (max-width: 70%) {
-      .text {
-        font-size: 12vw; /* Adjust font size for mobile devices */
-        top: -20%; /* Position text at the top */
-      }
-
-      .date-text {
-        font-size: 8vw; /* Adjust font size for mobile devices */
-        bottom: -20%; /* Position text at the bottom */
-      }
-    }
-
-  </style>
+  <title>For Shai</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap">
 </head>
 <body>
+  <header>
+    <h1>For Shai</h1>
+  </header>
   <div class="flower-container">
-    <img src="images/flowergif.gif" alt="Flower" class="flower"> <!-- Updated flower image source -->
-    <!-- Text at the bottom of the flower -->
-    <div class="text">For Shai</div>
-    <!-- Date text at the bottom of the flower -->
-    <div class="date-text">February 14, 2024</div>
+    <img src="images/flowergif.gif" alt="Flower" class="flower">
   </div>
+  <footer>
+    <p class="date">February 14, 2024</p>
+  </footer>
 </body>
 </html>
