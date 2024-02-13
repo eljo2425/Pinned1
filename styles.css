@@ -63,18 +63,19 @@ footer {
 
   h1 {
     margin: 0;
-    font-size: 150px; /* Adjust font size */
+    font-size: 60px; /* Adjust font size */
+    animation: floatText 4s ease-in-out infinite alternate;
     font-weight: lighter;
   }
 
   .date {
-    font-size: 80px; /* Adjust font size */
+    font-size: 40px; /* Adjust font size */
     animation: floatText 4s ease-in-out infinite alternate;
     font-weight: lighter;
   }
 
   .flower {
-    width: 300px; /* Adjust width */
+    width: 500px; /* Adjust width */
     height: auto; /* Maintain aspect ratio */
     animation: float 4s ease-in-out infinite alternate;
   }
